@@ -108,7 +108,7 @@ def find_optimal_lm_mod(X, y, cutoffs, test_size = .30, random_state=42, plot=Tr
 def main():
     df = pd.read_csv('../Part1/stackoverflow/survey_results_public.csv')
     X, y = clean_data(df)
-    #cutoffs here pertains to the number of missing values allowed in the used columns.
+    #cutoffs here pertain to the number of missing values allowed in the used columns.
     #Therefore, lower values for the cutoff provides more predictors in the model.
     cutoffs = [5000, 3500, 2500, 1000, 100, 50, 30, 20, 10, 5]
 
